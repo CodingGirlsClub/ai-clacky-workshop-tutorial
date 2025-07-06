@@ -5,7 +5,7 @@ baseurl: ""
 url: "https://codinggirlsclub.github.io/ai-clacky-workshop-tutorial"
 
 # Theme
-remote_theme: just-the-docs/just-the-docs
+remote_theme: pmarsceill/just-the-docs
 
 # Search
 search_enabled: true
@@ -25,6 +25,7 @@ kramdown:
   syntax_highlighter: rouge
 
 plugins:
+  - jekyll-remote-theme
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
