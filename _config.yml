@@ -12,11 +12,12 @@ kramdown:
   syntax_highlighter: rouge
 
 # Theme
-theme: minima
+remote_theme: pages-themes/minima@v2.5.0
 plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
+  - jekyll-remote-theme
 
 # Navigation
 header_pages:
@@ -31,33 +32,7 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - vendor/
-
-# Collections
-collections:
-  tutorials:
-    output: true
-    permalink: /:collection/:name/
-  student_works:
-    output: true
-    permalink: /:collection/:name/
-
-# Defaults
-defaults:
-  - scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "post"
-  - scope:
-      path: ""
-      type: "tutorials"
-    values:
-      layout: "page"
-  - scope:
-      path: ""
-      type: "student_works"
-    values:
-      layout: "page"
+  - README.md
 
 # Site author
 author:

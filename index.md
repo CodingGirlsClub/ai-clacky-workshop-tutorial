@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: home
 title: Clacky AI 编程入门教程
 ---
 
