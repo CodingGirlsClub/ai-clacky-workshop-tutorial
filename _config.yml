@@ -24,6 +24,14 @@ header_pages:
   - student-works/index.md
   - CONTRIBUTING.md
 
+# Exclude files from build
+exclude:
+  - docs/
+  - .github/
+  - Gemfile
+  - Gemfile.lock
+  - vendor/
+
 # Collections
 collections:
   tutorials:
