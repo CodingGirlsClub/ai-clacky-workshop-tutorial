@@ -43,6 +43,14 @@
 
 ## 🚀 快速开始
 
+### 🎯 注册 Clacky AI
+
+在开始学习之前，你需要先注册 Clacky AI 账户：
+
+**🔗 [立即申请 Clacky AI](https://clacky.ai/beta?source=source_coding_girls_club-medium_community-campaign_beta_launch)**
+
+> 💡 **特别说明**：这是 Clacky AI 专门为 **Coding Girls Club 程序媛汇** 提供的专属申请链接。活动期间使用此链接申请，将获得优先审批，且审批通过率更高。
+
 ### 📋 学习前准备
 
 **硬件要求**：
