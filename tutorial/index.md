@@ -1,6 +1,8 @@
 ---
-layout: page
+layout: default
 title: 教程目录
+nav_order: 2
+has_children: true
 permalink: /tutorial/
 ---
 

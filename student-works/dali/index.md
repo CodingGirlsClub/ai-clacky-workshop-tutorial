@@ -1,6 +1,8 @@
 ---
-layout: page
-title: 大理站作品
+layout: default
+title: 大理站
+parent: 学员作品
+nav_order: 1
 permalink: /student-works/dali/
 ---
 

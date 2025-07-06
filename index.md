@@ -1,6 +1,9 @@
 ---
-layout: home
-title: Clacky AI 编程入门教程
+layout: default
+title: 首页
+nav_order: 1
+description: "Clacky AI 编程入门教程 - 专为零基础学习者设计的 AI 辅助编程教程"
+permalink: /
 ---
 
 # Clacky AI 编程入门教程

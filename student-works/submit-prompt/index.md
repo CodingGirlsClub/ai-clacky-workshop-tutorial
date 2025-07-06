@@ -1,6 +1,8 @@
 ---
-layout: page
-title: 一键提交 Prompt
+layout: default
+title: 一键提交工具
+parent: 学员作品
+nav_order: 2
 permalink: /student-works/submit-prompt/
 ---
 

@@ -1,6 +1,8 @@
 ---
-layout: page
+layout: default
 title: 学员作品
+nav_order: 3
+has_children: true
 permalink: /student-works/
 ---
 
