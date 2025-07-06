@@ -12,12 +12,11 @@ kramdown:
   syntax_highlighter: rouge
 
 # Theme
-remote_theme: pages-themes/minima@v2.5.0
+theme: minima
 plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
-  - jekyll-remote-theme
 
 # Navigation
 header_pages:
