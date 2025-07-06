@@ -266,6 +266,15 @@
 
 记住：每个专业的程序员都是从第一行代码开始的。有了 Clacky AI 的帮助，你的编程之路将更加顺畅和有趣！
 
+## 🌐 在线阅读
+
+本教程已部署为 GitHub Pages 网站，你可以通过以下方式阅读：
+
+- **📖 在线网站**：[https://codinggirlsclub.github.io/ai-clacky-workshop-tutorial](https://codinggirlsclub.github.io/ai-clacky-workshop-tutorial)
+- **📱 移动端友好**：支持手机、平板等设备访问
+- **🔍 搜索功能**：方便查找特定内容
+- **📑 目录导航**：清晰的章节导航
+
 **🌟 祝你学习愉快，编程成功！** 🎉
 
 ---

@@ -1,0 +1,60 @@
+# Site settings
+title: "Clacky AI 编程入门教程"
+description: "专为零基础学习者设计的 AI 辅助编程教程"
+baseurl: ""
+url: "https://codinggirlsclub.github.io/ai-clacky-workshop-tutorial"
+
+# GitHub Pages settings
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+# Theme
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Navigation
+header_pages:
+  - tutorial/index.md
+  - student-works/index.md
+  - CONTRIBUTING.md
+
+# Collections
+collections:
+  tutorials:
+    output: true
+    permalink: /:collection/:name/
+  student_works:
+    output: true
+    permalink: /:collection/:name/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+      type: "tutorials"
+    values:
+      layout: "page"
+  - scope:
+      path: ""
+      type: "student_works"
+    values:
+      layout: "page"
+
+# Site author
+author:
+  name: "Coding Girls Club"
+  email: "support@clacky.ai"
+
+# Social links
+github_username: CodingGirlsClub
