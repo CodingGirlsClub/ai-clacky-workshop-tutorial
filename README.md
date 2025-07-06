@@ -43,13 +43,48 @@
 
 ## 🚀 快速开始
 
-### 🎯 注册 Clacky AI
+### 步骤 1：注册 Clacky AI
 
 在开始学习之前，你需要先注册 Clacky AI 账户：
 
 **🔗 [立即申请 Clacky AI](https://clacky.ai/beta?source=source_coding_girls_club-medium_community-campaign_beta_launch)**
 
 > 💡 **特别说明**：这是 Clacky AI 专门为 **Coding Girls Club 程序媛汇** 提供的专属申请链接。活动期间使用此链接申请，将获得优先审批，且审批通过率更高。
+
+### 步骤 2：注册 GitHub 账号
+
+- 访问 [GitHub 官网](https://github.com/) 并注册账号。
+- 完成邮箱验证和基础设置。
+
+### 步骤 3：选择并 Fork 官方仓库
+
+你可以选择以下任意一个官方博客仓库，点击进入后，点击右上角的 **Fork** 按钮，将仓库复制到你的账号下：
+
+- [Girls-Coding-Day-Jekyll-blog-1](https://github.com/CodingGirlsClub/Girls-Coding-Day-Jekyll-blog-1)
+- [Girls-Coding-Day-Jekyll-blog-2](https://github.com/CodingGirlsClub/Girls-Coding-Day-Jekyll-blog-2)
+- [Girls-Coding-Day-Jekyll-blog-3](https://github.com/CodingGirlsClub/Girls-Coding-Day-Jekyll-blog-3)
+- [Girls-Coding-Day-Jekyll-blog-4](https://github.com/CodingGirlsClub/Girls-Coding-Day-Jekyll-blog-4)
+
+### 步骤 4：Fork 本教程仓库
+
+- 访问 [本教程仓库](https://github.com/CodingGirlsClub/ai-clacky-workshop-tutorial)，点击右上角 **Fork** 按钮，将教程仓库复制到你的账号下。
+- 这样你就有了完整的教程副本，后续可以提交你的学习作品。
+
+### 步骤 5：通过 Clacky AI 导入 GitHub 项目
+
+- 在 Clacky AI 平台选择"导入 GitHub 项目"，登录你的 GitHub 账号，选择刚刚 Fork 的仓库进行导入。
+- 导入后即可在 Clacky AI 云端环境中体验真实项目开发、协作与部署。
+
+---
+
+#### 💡 为什么要用 GitHub 和 GitHub Pages？
+
+- **GitHub** 是全球最大的开源代码托管平台，支持版本管理、协作开发。
+- **GitHub Pages** 可以免费托管静态网站，让你的博客一键上线，拥有自己的公开网址。
+- **Fork** 本教程仓库，完成学习后可以提交你的作品，参与开源社区贡献。
+- 通过 Fork、导入、修改和发布，你可以完整体验现代开发和开源协作流程。
+
+---
 
 ### 📋 学习前准备
 
@@ -155,6 +190,26 @@
 3. **及时提问**：遇到问题及时联系官方支持
 4. **保持耐心**：编程学习需要时间，不要急于求成
 5. **分享交流**：与其他学习者分享经验和作品
+
+---
+
+## 🎨 学员作品展示
+
+### 🏔️ 大理站
+
+欢迎查看来自大理的学员们的优秀作品！每个项目都展示了学员从零基础到独立开发的成长历程。
+
+| 学员   | 项目名称 | 项目描述               | 技术栈 | 在线链接 | GitHub |
+| ------ | -------- | ---------------------- | ------ | -------- | ------ |
+| 待更新 | 敬请期待 | 第一批学员作品即将上线 | -      | -        | -      |
+
+> 💡 **想要展示你的作品？** 完成教程学习后，按照 [贡献指南](CONTRIBUTING.md) 提交你的项目！
+
+### 🌟 其他城市
+
+- 🏙️ **北京站** - 即将开放
+- 🏢 **上海站** - 即将开放
+- 🌸 **成都站** - 即将开放
 
 ---
 
