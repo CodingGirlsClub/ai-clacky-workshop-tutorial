@@ -1,2 +1,13 @@
 # IDE files
 .idea/
+
+# GitBook 生成的文件
+_book/
+node_modules/
+*.epub
+*.mobi
+*.pdf
+
+# 临时文件
+.tmp/
+.DS_Store

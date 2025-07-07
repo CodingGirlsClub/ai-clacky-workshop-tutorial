@@ -1,0 +1,30 @@
+{
+  "name": "ai-clacky-workshop-tutorial",
+  "version": "1.0.0",
+  "description": "Clacky AI 编程入门教程",
+  "main": "index.js",
+  "scripts": {
+    "serve": "gitbook serve",
+    "build": "gitbook build",
+    "install": "gitbook install",
+    "pdf": "gitbook pdf . ./output.pdf",
+    "epub": "gitbook epub . ./output.epub",
+    "mobi": "gitbook mobi . ./output.mobi"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CodingGirlsClub/ai-clacky-workshop-tutorial.git"
+  },
+  "keywords": [
+    "clacky-ai",
+    "programming",
+    "tutorial",
+    "gitbook",
+    "education"
+  ],
+  "author": "Clacky AI Workshop",
+  "license": "MIT",
+  "devDependencies": {
+    "gitbook-cli": "^2.3.2"
+  }
+}

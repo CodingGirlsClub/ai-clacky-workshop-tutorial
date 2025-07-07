@@ -15,9 +15,9 @@
 一个有效的 `.1024` 文件示例：
 
 ```yaml
-run_command: bin/dev
+run_command: npm run serve
 # dependency_command 会在你 fork 新线程前自动执行
-dependency_command: bundle install && yarn install
+dependency_command: npm install && npm run install
 ```
 
 一个无需编译的 python 项目：

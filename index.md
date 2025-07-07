@@ -1,11 +1,3 @@
----
-layout: default
-title: 首页
-nav_order: 1
-description: "Clacky AI 编程入门教程 - 专为零基础学习者设计的 AI 辅助编程教程"
-permalink: /
----
-
 # Clacky AI 编程入门教程
 
 ## 🌟 项目简介
@@ -34,9 +26,9 @@ permalink: /
 
 ### 📚 选择你的学习路径
 
-- **📖 [开始教程]({{ site.baseurl }}/tutorial/)** - 系统性学习完整教程
-- **🎨 [查看作品]({{ site.baseurl }}/student-works/)** - 浏览其他学员的优秀作品
-- **🚀 [提交作品]({{ site.baseurl }}/student-works/submit-prompt/)** - 完成学习后分享你的项目
+- **📖 [开始教程](tutorial/)** - 系统性学习完整教程
+- **🎨 [查看作品](student-works/)** - 浏览其他学员的优秀作品
+- **🚀 [提交作品](student-works/submit-prompt/)** - 完成学习后分享你的项目
 
 ---
 
@@ -65,7 +57,7 @@ permalink: /
 
 ## 🎨 精选学员作品
 
-### 🏔️ [大理站]({{ site.baseurl }}/student-works/dali/) - 首发站点
+### 🏔️ [大理站](student-works/dali/) - 首发站点
 
 来自苍山洱海边的学员精彩作品展示
 
@@ -73,13 +65,13 @@ permalink: /
 
 - 🏙️ **北京站** | 🏢 **上海站** | 🌸 **成都站** - 即将开放
 
-> 💡 **想要展示你的作品？** 使用我们的 [一键提交工具]({{ site.baseurl }}/student-works/submit-prompt/) 让 Clacky AI 帮你自动提交！
+> 💡 **想要展示你的作品？** 使用我们的 [一键提交工具](student-works/submit-prompt/) 让 Clacky AI 帮你自动提交！
 
 ---
 
 ## 🚀 开始你的编程之旅
 
-**准备好了吗？** 让我们从 [教程目录]({{ site.baseurl }}/tutorial/) 开始，踏上 AI 辅助编程的学习之旅！
+**准备好了吗？** 让我们从 [教程目录](tutorial/) 开始，踏上 AI 辅助编程的学习之旅！
 
 记住：每个专业的程序员都是从第一行代码开始的。有了 Clacky AI 的帮助，你的编程之路将更加顺畅和有趣！
 
