@@ -1,0 +1,40 @@
+{
+  "title": "Clacky AI 编程入门教程",
+  "description": "专为零基础学习者设计的 AI 辅助编程教程",
+  "author": "Coding Girls Club",
+  "language": "zh-hans",
+  "gitbook": ">=3.0.0",
+  "structure": {
+    "readme": "README.md",
+    "summary": "SUMMARY.md"
+  },
+  "plugins": [
+    "theme-default",
+    "search",
+    "lunr",
+    "fontsettings",
+    "theme-comscore",
+    "-sharing",
+    "github",
+    "edit-link",
+    "page-toc",
+    "back-to-top-button"
+  ],
+  "pluginsConfig": {
+    "github": {
+      "url": "https://github.com/CodingGirlsClub/ai-clacky-workshop-tutorial"
+    },
+    "edit-link": {
+      "base": "https://github.com/CodingGirlsClub/ai-clacky-workshop-tutorial/edit/main",
+      "label": "编辑此页"
+    },
+    "page-toc": {
+      "selector": ".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4",
+      "position": "top",
+      "showByDefault": true
+    }
+  },
+  "variables": {
+    "host": "https://codinggirlsclub.github.io/ai-clacky-workshop-tutorial/"
+  }
+}

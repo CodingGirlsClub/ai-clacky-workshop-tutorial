@@ -18,13 +18,13 @@
 
 ### 📖 主要内容
 
-| 文件名                                                                    | 内容描述                   | 预计学习时间 |
-| ------------------------------------------------------------------------- | -------------------------- | ------------ |
-| [Clacky-AI-编程入门教程.md](tutorial/Clacky-AI-编程入门教程.md)           | 教程总览和学习路线图       | 20 分钟      |
-| [第一部分-Clacky-AI-基础概念.md](tutorial/第一部分-Clacky-AI-基础概念.md) | 核心概念详解，编程基础知识 | 20 分钟      |
-| [第二部分-快速入门指南.md](tutorial/第二部分-快速入门指南.md)             | 注册、登录、基本操作指南   | 30 分钟      |
-| [第三部分-第一个项目实践.md](tutorial/第三部分-第一个项目实践.md)         | 完整项目开发实战教程       | 80 分钟      |
-| [第四部分-进阶功能和最佳实践.md](tutorial/第四部分-进阶功能和最佳实践.md) | 高级功能和专业开发技巧     | 50 分钟      |
+| 章节                      | 内容描述                   | 预计学习时间 |
+| ------------------------- | -------------------------- | ------------ |
+| [第一章：开始之前](chapter1/README.md)     | 编程基础概念和AI辅助编程介绍 | 20 分钟      |
+| [第二章：环境准备](chapter2/README.md)     | 注册账户、连接GitHub、环境设置 | 30 分钟      |
+| [第三章：基础概念](chapter3/README.md)     | 编程语言基础、数据类型、控制结构 | 30 分钟      |
+| [第四章：第一个程序](chapter4/README.md)   | Hello World项目实践 | 40 分钟      |
+| [第五章：进阶技巧](chapter5/README.md)     | 面向对象、错误处理、文件操作 | 50 分钟      |
 
 ### 🛠️ 实践练习
 
@@ -36,8 +36,8 @@
 
 | 文件名                                      | 内容描述           | 用途     |
 | ------------------------------------------- | ------------------ | -------- |
-| [教程使用指南.md](tutorial/教程使用指南.md) | 学习方法和进度跟踪 | 学习指导 |
-| [常见问题解答.md](tutorial/常见问题解答.md) | FAQ 和故障排除     | 问题解决 |
+| [常见问题](appendix/faq.md) | FAQ 和故障排除     | 问题解决 |
+| [资源链接](appendix/resources.md) | 学习资源和工具推荐 | 学习指导 |
 
 ---
 
@@ -56,21 +56,12 @@
 - 访问 [GitHub 官网](https://github.com/) 并注册账号。
 - 完成邮箱验证和基础设置。
 
-### 步骤 3：选择并 Fork 官方仓库
-
-你可以选择以下任意一个官方博客仓库，点击进入后，点击右上角的 **Fork** 按钮，将仓库复制到你的账号下：
-
-- [Girls-Coding-Day-Jekyll-blog-1](https://github.com/CodingGirlsClub/Girls-Coding-Day-Jekyll-blog-1)
-- [Girls-Coding-Day-Jekyll-blog-2](https://github.com/CodingGirlsClub/Girls-Coding-Day-Jekyll-blog-2)
-- [Girls-Coding-Day-Jekyll-blog-3](https://github.com/CodingGirlsClub/Girls-Coding-Day-Jekyll-blog-3)
-- [Girls-Coding-Day-Jekyll-blog-4](https://github.com/CodingGirlsClub/Girls-Coding-Day-Jekyll-blog-4)
-
-### 步骤 4：Fork 本教程仓库
+### 步骤 3：Fork 本教程仓库
 
 - 访问 [本教程仓库](https://github.com/CodingGirlsClub/ai-clacky-workshop-tutorial)，点击右上角 **Fork** 按钮，将教程仓库复制到你的账号下。
 - 这样你就有了完整的教程副本，后续可以提交你的学习作品。
 
-### 步骤 5：通过 Clacky AI 导入 GitHub 项目
+### 步骤 4：通过 Clacky AI 导入 GitHub 项目
 
 - 在 Clacky AI 平台选择"导入 GitHub 项目"，登录你的 GitHub 账号，选择刚刚 Fork 的仓库进行导入。
 - 导入后即可在 Clacky AI 云端环境中体验真实项目开发、协作与部署。
@@ -80,7 +71,7 @@
 #### 💡 为什么要用 GitHub 和 GitHub Pages？
 
 - **GitHub** 是全球最大的开源代码托管平台，支持版本管理、协作开发。
-- **GitHub Pages** 可以免费托管静态网站，让你的博客一键上线，拥有自己的公开网址。
+- **GitBook** 可以创建精美的在线文档和电子书，让你的内容一键发布。
 - **Fork** 本教程仓库，完成学习后可以提交你的作品，参与开源社区贡献。
 - 通过 Fork、导入、修改和发布，你可以完整体验现代开发和开源协作流程。
 
@@ -262,15 +253,15 @@
 
 ## 🚀 开始你的编程之旅
 
-**准备好了吗？让我们从 [教程总览](tutorial/Clacky-AI-编程入门教程.md) 开始，踏上 AI 辅助编程的学习之旅！**
+**准备好了吗？让我们从 [第一章：开始之前](chapter1/README.md) 开始，踏上 AI 辅助编程的学习之旅！**
 
 记住：每个专业的程序员都是从第一行代码开始的。有了 Clacky AI 的帮助，你的编程之路将更加顺畅和有趣！
 
 ## 🌐 在线阅读
 
-本教程已部署为 GitHub Pages 网站，你可以通过以下方式阅读：
+本教程已配置为 GitBook 电子书，你可以通过以下方式阅读：
 
-- **📖 在线网站**：[https://codinggirlsclub.github.io/ai-clacky-workshop-tutorial](https://codinggirlsclub.github.io/ai-clacky-workshop-tutorial)
+- **📖 GitBook 电子书**：[https://codinggirlsclub.github.io/ai-clacky-workshop-tutorial](https://codinggirlsclub.github.io/ai-clacky-workshop-tutorial)
 - **📱 移动端友好**：支持手机、平板等设备访问
 - **🔍 搜索功能**：方便查找特定内容
 - **📑 目录导航**：清晰的章节导航

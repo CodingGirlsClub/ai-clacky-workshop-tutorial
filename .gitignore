@@ -1,2 +1,12 @@
 # IDE files
 .idea/
+
+# GitBook generated files
+_book/
+node_modules/
+*.epub
+*.mobi
+*.pdf
+
+# GitBook plugins
+.grunt/

@@ -1,0 +1,26 @@
+root: ./
+
+structure:
+  readme: README.md
+  summary: SUMMARY.md
+
+plugins:
+  - search
+  - lunr
+  - fontsettings
+  - theme-comscore
+  - github
+  - edit-link
+  - page-toc
+  - back-to-top-button
+
+pluginsConfig:
+  github:
+    url: https://github.com/CodingGirlsClub/ai-clacky-workshop-tutorial
+  edit-link:
+    base: https://github.com/CodingGirlsClub/ai-clacky-workshop-tutorial/edit/main
+    label: 编辑此页
+  page-toc:
+    selector: ".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4"
+    position: "top"
+    showByDefault: true
