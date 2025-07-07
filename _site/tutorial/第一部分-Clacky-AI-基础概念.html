@@ -1,0 +1,741 @@
+
+
+<!DOCTYPE html>
+
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+  <link rel="stylesheet" href="/assets/css/just-the-docs-default.css">
+
+  <link rel="stylesheet" href="/assets/css/just-the-docs-head-nav.css" id="jtd-head-nav-stylesheet">
+
+  <style id="jtd-nav-activation">
+  
+
+    
+    .site-nav > ul.nav-list:first-child > li:not(:nth-child(8)) > a,
+    .site-nav > ul.nav-list:first-child > li > ul > li a {
+      background-image: none;
+    }
+
+    .site-nav > ul.nav-list:not(:first-child) a,
+    .site-nav li.external a {
+      background-image: none;
+    }
+
+    .site-nav > ul.nav-list:first-child > li:nth-child(8) > a {
+      font-weight: 600;
+      text-decoration: none;
+    }.site-nav > ul.nav-list:first-child > li:nth-child(8) > button svg {
+      transform: rotate(-90deg);
+    }.site-nav > ul.nav-list:first-child > li.nav-list-item:nth-child(8) > ul.nav-list {
+      display: block;
+    }
+  </style>
+
+  
+
+  
+    <script src="/assets/js/vendor/lunr.min.js"></script>
+  
+
+  <script src="/assets/js/just-the-docs.js"></script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+
+
+
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>第一部分：认识 Clacky AI | Clacky AI 编程入门教程</title>
+<meta name="generator" content="Jekyll v3.10.0" />
+<meta property="og:title" content="第一部分：认识 Clacky AI" />
+<meta name="author" content="Coding Girls Club" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="专为零基础学习者设计的 AI 辅助编程教程" />
+<meta property="og:description" content="专为零基础学习者设计的 AI 辅助编程教程" />
+<link rel="canonical" href="https://codinggirlsclub.github.io/ai-clacky-workshop-tutorial/tutorial/%E7%AC%AC%E4%B8%80%E9%83%A8%E5%88%86-Clacky-AI-%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5.html" />
+<meta property="og:url" content="https://codinggirlsclub.github.io/ai-clacky-workshop-tutorial/tutorial/%E7%AC%AC%E4%B8%80%E9%83%A8%E5%88%86-Clacky-AI-%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5.html" />
+<meta property="og:site_name" content="Clacky AI 编程入门教程" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="第一部分：认识 Clacky AI" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"Coding Girls Club"},"description":"专为零基础学习者设计的 AI 辅助编程教程","headline":"第一部分：认识 Clacky AI","url":"https://codinggirlsclub.github.io/ai-clacky-workshop-tutorial/tutorial/%E7%AC%AC%E4%B8%80%E9%83%A8%E5%88%86-Clacky-AI-%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+  
+
+</head>
+
+<body>
+  <a class="skip-to-main" href="#main-content">Skip to main content</a>
+  <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+  <symbol id="svg-link" viewBox="0 0 24 24">
+  <title>Link</title>
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-link">
+    <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+  </svg>
+</symbol>
+
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+  <title>Menu</title>
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu">
+    <line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line>
+  </svg>
+</symbol>
+
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+  <title>Expand</title>
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
+    <polyline points="9 18 15 12 9 6"></polyline>
+  </svg>
+</symbol>
+
+  <!-- Feather. MIT License: https://github.com/feathericons/feather/blob/master/LICENSE -->
+<symbol id="svg-external-link" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link">
+  <title id="svg-external-link-title">(external link)</title>
+  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line>
+</symbol>
+
+  
+    <symbol id="svg-doc" viewBox="0 0 24 24">
+  <title>Document</title>
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file">
+    <path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path><polyline points="13 2 13 9 20 9"></polyline>
+  </svg>
+</symbol>
+
+    <symbol id="svg-search" viewBox="0 0 24 24">
+  <title>Search</title>
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search">
+    <circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+  </svg>
+</symbol>
+
+  
+  
+    <!-- Bootstrap Icons. MIT License: https://github.com/twbs/icons/blob/main/LICENSE.md -->
+<symbol id="svg-copy" viewBox="0 0 16 16">
+  <title>Copy</title>
+  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clipboard" viewBox="0 0 16 16">
+    <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
+    <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"/>
+  </svg>
+</symbol>
+<symbol id="svg-copied" viewBox="0 0 16 16">
+  <title>Copied</title>
+  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clipboard-check-fill" viewBox="0 0 16 16">
+    <path d="M6.5 0A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3Zm3 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3Z"/>
+    <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1A2.5 2.5 0 0 1 9.5 5h-3A2.5 2.5 0 0 1 4 2.5v-1Zm6.854 7.354-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708.708Z"/>
+  </svg>
+</symbol>
+
+  
+</svg>
+
+  
+    <div class="side-bar">
+  <div class="site-header" role="banner">
+    <a href="/" class="site-title lh-tight">
+  Clacky AI 编程入门教程
+
+</a>
+    <button id="menu-button" class="site-button btn-reset" aria-label="Toggle menu" aria-pressed="false">
+      <svg viewBox="0 0 24 24" class="icon" aria-hidden="true"><use xlink:href="#svg-menu"></use></svg>
+    </button>
+  </div>
+
+  <nav aria-label="Main" id="site-nav" class="site-nav">
+  
+  
+    <ul class="nav-list"><li class="nav-list-item"><a href="/" class="nav-list-link">首页</a></li><li class="nav-list-item"><a href="/tutorial/" class="nav-list-link">教程目录</a></li><li class="nav-list-item"><button class="nav-list-expander btn-reset" aria-label="toggle items in 学员作品 category" aria-pressed="false">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+      </button><a href="/student-works/" class="nav-list-link">学员作品</a><ul class="nav-list"><li class="nav-list-item"><a href="/student-works/dali/" class="nav-list-link">大理站</a></li><li class="nav-list-item"><a href="/student-works/submit-prompt/" class="nav-list-link">一键提交工具</a></li></ul></li><li class="nav-list-item"><a href="/tutorial/Clacky-AI-%E7%BC%96%E7%A8%8B%E5%85%A5%E9%97%A8%E6%95%99%E7%A8%8B.html" class="nav-list-link">Clacky AI 编程入门教程</a></li><li class="nav-list-item"><a href="/tutorial/%E6%95%99%E7%A8%8B%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97.html" class="nav-list-link">Clacky AI 编程入门教程使用指南</a></li><li class="nav-list-item"><a href="/tutorial/%E5%AE%9E%E8%B7%B5%E7%BB%83%E4%B9%A0%E5%92%8C%E4%BD%9C%E4%B8%9A.html" class="nav-list-link">实践练习和作业</a></li><li class="nav-list-item"><a href="/tutorial/%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E8%A7%A3%E7%AD%94.html" class="nav-list-link">常见问题解答（FAQ）</a></li><li class="nav-list-item"><a href="/tutorial/%E7%AC%AC%E4%B8%80%E9%83%A8%E5%88%86-Clacky-AI-%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5.html" class="nav-list-link">第一部分：认识 Clacky AI</a></li><li class="nav-list-item"><a href="/tutorial/%E7%AC%AC%E4%B8%89%E9%83%A8%E5%88%86-%E7%AC%AC%E4%B8%80%E4%B8%AA%E9%A1%B9%E7%9B%AE%E5%AE%9E%E8%B7%B5.html" class="nav-list-link">第三部分：创建你的第一个项目</a></li><li class="nav-list-item"><a href="/tutorial/%E7%AC%AC%E4%BA%8C%E9%83%A8%E5%88%86-%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8%E6%8C%87%E5%8D%97.html" class="nav-list-link">第二部分：开始使用 Clacky AI</a></li><li class="nav-list-item"><a href="/tutorial/%E7%AC%AC%E5%9B%9B%E9%83%A8%E5%88%86-%E8%BF%9B%E9%98%B6%E5%8A%9F%E8%83%BD%E5%92%8C%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5.html" class="nav-list-link">第四部分：进阶功能和最佳实践</a></li></ul>
+  
+</nav>
+
+
+
+
+  
+  
+    <footer class="site-footer">
+      This site uses <a href="https://github.com/just-the-docs/just-the-docs">Just the Docs</a>, a documentation theme for Jekyll.
+    </footer>
+  
+</div>
+
+  
+  <div class="main" id="top">
+    <div id="main-header" class="main-header">
+  
+    
+
+<div class="search" role="search">
+  <div class="search-input-wrap">
+    <input type="text" id="search-input" class="search-input" tabindex="0" placeholder="Search Clacky AI 编程入门教程" aria-label="Search Clacky AI 编程入门教程" autocomplete="off">
+    <label for="search-input" class="search-label"><svg viewBox="0 0 24 24" class="search-icon"><use xlink:href="#svg-search"></use></svg></label>
+  </div>
+  <div id="search-results" class="search-results"></div>
+</div>
+
+  
+  
+  
+</div>
+
+    <div class="main-content-wrap">
+      
+      <div id="main-content" class="main-content">
+        <main>
+          
+            <h1 id="第一部分认识-clacky-ai">
+  
+  
+    <a href="#第一部分认识-clacky-ai" class="anchor-heading" aria-labelledby="第一部分认识-clacky-ai"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 第一部分：认识 Clacky AI
+  
+  
+</h1>
+    
+<h2 id="-学习目标">
+  
+  
+    <a href="#-学习目标" class="anchor-heading" aria-labelledby="-学习目标"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 🎯 学习目标
+  
+  
+</h2>
+    
+
+<p>完成这一部分后，你将：</p>
+
+<ul>
+  <li>理解什么是编程以及 AI 如何改变编程</li>
+  <li>掌握 Clacky AI 的核心概念</li>
+  <li>了解为什么 Clacky AI 适合编程初学者</li>
+</ul><hr />
+<h2 id="11-什么是编程">
+  
+  
+    <a href="#11-什么是编程" class="anchor-heading" aria-labelledby="11-什么是编程"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 1.1 什么是编程？
+  
+  
+</h2>
+    
+<h3 id="-编程就像写菜谱">
+  
+  
+    <a href="#-编程就像写菜谱" class="anchor-heading" aria-labelledby="-编程就像写菜谱"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 🤔 编程就像写菜谱
+  
+  
+</h3>
+    
+
+<p>想象一下，你要教一个从来没有做过饭的朋友如何做一道菜。你需要：</p>
+
+<ol>
+  <li><strong>明确目标</strong>：我要做什么菜？（比如：西红柿炒鸡蛋）</li>
+  <li><strong>准备材料</strong>：需要哪些食材？（西红柿、鸡蛋、油、盐等）</li>
+  <li><strong>详细步骤</strong>：
+    <ul>
+      <li>先打散鸡蛋</li>
+      <li>热锅放油</li>
+      <li>倒入鸡蛋炒熟盛起</li>
+      <li>放入西红柿炒出汁水</li>
+      <li>加入炒蛋，调味即可</li>
+    </ul>
+  </li>
+</ol>
+
+<p>编程其实就是这样！我们告诉计算机：</p>
+
+<ul>
+  <li><strong>目标</strong>：我要创建一个什么样的应用程序</li>
+  <li><strong>材料</strong>：需要什么功能和数据</li>
+  <li><strong>步骤</strong>：一步一步如何实现</li>
+</ul>
+<h3 id="传统编程-vs-ai-辅助编程">
+  
+  
+    <a href="#传统编程-vs-ai-辅助编程" class="anchor-heading" aria-labelledby="传统编程-vs-ai-辅助编程"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 传统编程 vs AI 辅助编程
+  
+  
+</h3>
+    
+<h4 id="传统编程方式-">
+  
+  
+    <a href="#传统编程方式-" class="anchor-heading" aria-labelledby="传统编程方式-"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 传统编程方式 😰
+  
+  
+</h4>
+    
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>你需要学习：
+├── 编程语言（如 JavaScript、Python）
+├── 框架和库（如 React、Vue）
+├── 数据库知识
+├── 服务器配置
+├── 调试和测试
+└── 部署和维护
+</code></pre></div></div>
+
+<p><strong>就像</strong>：你需要先学会种菜、养鸡、做调料，才能做出一道菜</p>
+<h4 id="ai-辅助编程方式-">
+  
+  
+    <a href="#ai-辅助编程方式-" class="anchor-heading" aria-labelledby="ai-辅助编程方式-"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> AI 辅助编程方式 😊
+  
+  
+</h4>
+    
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>你只需要：
+├── 清楚地描述你想要什么
+├── 与 AI 进行对话交流
+├── 提供反馈和建议
+└── 测试最终结果
+</code></pre></div></div>
+
+<p><strong>就像</strong>：你只需要告诉一个专业厨师你想吃什么，他来负责所有的技术细节</p><hr />
+<h2 id="12-clacky-ai-核心概念">
+  
+  
+    <a href="#12-clacky-ai-核心概念" class="anchor-heading" aria-labelledby="12-clacky-ai-核心概念"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 1.2 Clacky AI 核心概念
+  
+  
+</h2>
+    
+<h3 id="-工作空间workspace">
+  
+  
+    <a href="#-工作空间workspace" class="anchor-heading" aria-labelledby="-工作空间workspace"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 🏢 工作空间（Workspace）
+  
+  
+</h3>
+    
+
+<p><strong>简单理解</strong>：工作空间就像你的数字办公室</p>
+
+<p>想象你在一家公司工作：</p>
+
+<ul>
+  <li>你有自己的办公桌（个人工作区域）</li>
+  <li>可以和同事协作（团队功能）</li>
+  <li>有各种工具和资源（开发环境）</li>
+  <li>可以管理多个项目（项目管理）</li>
+</ul>
+
+<p>在 Clacky AI 中，工作空间提供：</p>
+
+<ul>
+  <li>🖥️ <strong>云端开发环境</strong>：无需在自己电脑上安装复杂软件</li>
+  <li>👥 <strong>团队协作</strong>：可以邀请他人一起工作</li>
+  <li>🔧 <strong>完整工具链</strong>：所有开发需要的工具都已准备好</li>
+  <li>📁 <strong>项目管理</strong>：统一管理所有项目</li>
+</ul>
+<h3 id="-项目project">
+  
+  
+    <a href="#-项目project" class="anchor-heading" aria-labelledby="-项目project"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 📁 项目（Project）
+  
+  
+</h3>
+    
+
+<p><strong>简单理解</strong>：项目就是你要创建的完整应用程序</p>
+
+<p>比如：</p>
+
+<ul>
+  <li>📝 <strong>个人博客网站</strong> = 一个项目</li>
+  <li>🛒 <strong>在线商店</strong> = 一个项目</li>
+  <li>📱 <strong>待办事项应用</strong> = 一个项目</li>
+</ul>
+
+<p>每个项目包含：</p>
+
+<ul>
+  <li>所有的代码文件</li>
+  <li>配置和设置</li>
+  <li>版本历史记录</li>
+  <li>相关文档</li>
+</ul>
+<h3 id="-线程thread">
+  
+  
+    <a href="#-线程thread" class="anchor-heading" aria-labelledby="-线程thread"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 🧵 线程（Thread）
+  
+  
+</h3>
+    
+
+<p><strong>简单理解</strong>：线程就是处理具体任务的独立工作环境</p>
+
+<p><strong>官方定义</strong>：线程是基于 git 分支组织的独立开发环境，用于处理项目工作流中的具体任务。每个线程都在独立的云开发环境中运行，变更不会影响项目其他部分，直到合并为止。</p>
+
+<p><strong>生活中的例子</strong>：
+假设你要装修房子（项目），你会分别处理：</p>
+
+<ul>
+  <li>🎨 <strong>装修客厅</strong>（一个线程）</li>
+  <li>🛏️ <strong>装修卧室</strong>（另一个线程）</li>
+  <li>🍳 <strong>装修厨房</strong>（又一个线程）</li>
+</ul>
+
+<p>每个房间的装修不会互相干扰，完成后再整合到整个房子里。</p>
+
+<p><strong>在 Clacky AI 中</strong>：</p>
+
+<ul>
+  <li>🆕 <strong>添加新功能</strong> = 创建新线程</li>
+  <li>🐛 <strong>修复问题</strong> = 创建新线程</li>
+  <li>✨ <strong>改进界面</strong> = 创建新线程</li>
+</ul>
+<h4 id="线程的类型">
+  
+  
+    <a href="#线程的类型" class="anchor-heading" aria-labelledby="线程的类型"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 线程的类型
+  
+  
+</h4>
+    
+
+<p><strong>1. 根线程（Root Thread）</strong></p>
+
+<ul>
+  <li>🏗️ <strong>作用</strong>：仅用于首次导入项目时设置开发环境、提交 <code class="language-plaintext highlighter-rouge">.1024</code> 文件和更新 <code class="language-plaintext highlighter-rouge">.gitignore</code>，不做业务开发。</li>
+  <li>🔧 <strong>内容</strong>：安装必要工具，配置开发环境，初始化依赖。</li>
+  <li>⚠️ <strong>注意</strong>：根线程关闭后，所有 Issue 线程均继承该基础环境。</li>
+</ul>
+
+<p><strong>2. Issue 线程（功能线程）</strong> ：开发具体功能</p>
+
+<ul>
+  <li>✨ <strong>作用</strong>：每个线程只处理一个明确需求（如新功能、bug 修复等），继承根线程环境配置。</li>
+  <li>🎯 <strong>特点</strong>：上下文干净，便于聚焦单一任务，提升 AI 编码效果。</li>
+  <li>🔄 <strong>流程</strong>：需求沟通 → 创建线程 → 开发 → 测试 → 提交变更 → 合并到主项目 → 关闭线程</li>
+</ul>
+<h3 id="-ai-代理ai-agents">
+  
+  
+    <a href="#-ai-代理ai-agents" class="anchor-heading" aria-labelledby="-ai-代理ai-agents"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 🤖 AI 代理（AI Agents）
+  
+  
+</h3>
+    
+
+<p><strong>简单理解</strong>：AI 代理就是你的智能助手团队</p>
+
+<p>想象你有一个专业团队帮你工作：</p>
+
+<p>Clacky AI 包含以下四大核心代理模块，每个模块各司其职，协同完成开发任务：</p>
+<h4 id="1-任务计划代理task-plan-agent">
+  
+  
+    <a href="#1-任务计划代理task-plan-agent" class="anchor-heading" aria-labelledby="1-任务计划代理task-plan-agent"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 1. 任务计划代理（Task Plan Agent）📋
+  
+  
+</h4>
+    
+
+<p><strong>就像项目经理</strong></p>
+
+<ul>
+  <li>理解你的需求</li>
+  <li>制定详细计划</li>
+  <li>分解复杂任务</li>
+  <li>监督执行进度</li>
+</ul>
+
+<p><strong>工作流程</strong>：</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>你的需求 → 分析理解 → 制定计划 → 执行任务 → 检查结果
+</code></pre></div></div>
+<h4 id="2-聊天代理chat-agent">
+  
+  
+    <a href="#2-聊天代理chat-agent" class="anchor-heading" aria-labelledby="2-聊天代理chat-agent"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 2. 聊天代理（Chat Agent）💬
+  
+  
+</h4>
+    
+
+<p><strong>就像技术顾问</strong></p>
+
+<ul>
+  <li>回答你的问题</li>
+  <li>解释代码含义</li>
+  <li>提供技术建议</li>
+  <li>帮助解决问题</li>
+</ul>
+<h4 id="3-git-代理git-agent">
+  
+  
+    <a href="#3-git-代理git-agent" class="anchor-heading" aria-labelledby="3-git-代理git-agent"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 3. Git 代理（Git Agent）📚
+  
+  
+</h4>
+    
+
+<p><strong>就像版本管理员</strong></p>
+
+<ul>
+  <li>保存代码版本</li>
+  <li>管理代码变更</li>
+  <li>处理代码合并</li>
+  <li>连接远程仓库</li>
+</ul>
+<h4 id="4-智能检测代理smart-detect-agent️">
+  
+  
+    <a href="#4-智能检测代理smart-detect-agent️" class="anchor-heading" aria-labelledby="4-智能检测代理smart-detect-agent️"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 4. 智能检测代理（Smart Detect Agent）🛠️
+  
+  
+</h4>
+    
+
+<p><strong>就像自动化测试和修复专家</strong></p>
+
+<ul>
+  <li>自动检测代码中的潜在问题</li>
+  <li>提供修复建议或自动修复</li>
+  <li>辅助保障代码质量和稳定性</li>
+</ul><hr />
+<h2 id="13-clacky-ai-的优势">
+  
+  
+    <a href="#13-clacky-ai-的优势" class="anchor-heading" aria-labelledby="13-clacky-ai-的优势"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 1.3 Clacky AI 的优势
+  
+  
+</h2>
+    
+<h3 id="-为什么选择-clacky-ai">
+  
+  
+    <a href="#-为什么选择-clacky-ai" class="anchor-heading" aria-labelledby="-为什么选择-clacky-ai"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 🚀 为什么选择 Clacky AI？
+  
+  
+</h3>
+    
+<h4 id="1-零基础友好-">
+  
+  
+    <a href="#1-零基础友好-" class="anchor-heading" aria-labelledby="1-零基础友好-"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 1. 零基础友好 👶
+  
+  
+</h4>
+    
+
+<ul>
+  <li><strong>无需学习编程语言</strong>：用自然语言描述需求即可</li>
+  <li><strong>AI 处理技术细节</strong>：复杂的代码由 AI 自动生成</li>
+  <li><strong>实时指导</strong>：遇到问题立即获得帮助</li>
+  <li><strong>渐进式学习</strong>：在实践中逐步理解编程概念</li>
+</ul>
+<h4 id="2-专业级质量-">
+  
+  
+    <a href="#2-专业级质量-" class="anchor-heading" aria-labelledby="2-专业级质量-"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 2. 专业级质量 💎
+  
+  
+</h4>
+    
+
+<ul>
+  <li><strong>成熟的工作流程</strong>：遵循行业最佳实践</li>
+  <li><strong>高质量代码</strong>：AI 生成的代码符合专业标准</li>
+  <li><strong>完整的测试</strong>：自动检查和修复问题</li>
+  <li><strong>版本控制</strong>：专业的代码管理方式</li>
+</ul>
+<h4 id="3-高效协作-">
+  
+  
+    <a href="#3-高效协作-" class="anchor-heading" aria-labelledby="3-高效协作-"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 3. 高效协作 🤝
+  
+  
+</h4>
+    
+
+<ul>
+  <li><strong>实时反馈</strong>：随时调整和修改</li>
+  <li><strong>可视化过程</strong>：”任务时光机”让你看到每一步</li>
+  <li><strong>团队协作</strong>：可以邀请他人参与项目</li>
+  <li><strong>知识共享</strong>：学习他人的项目经验</li>
+</ul>
+<h4 id="4-完整生态-">
+  
+  
+    <a href="#4-完整生态-" class="anchor-heading" aria-labelledby="4-完整生态-"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 4. 完整生态 🌟
+  
+  
+</h4>
+    
+
+<ul>
+  <li><strong>云端环境</strong>：无需复杂的本地配置</li>
+  <li><strong>集成工具</strong>：开发、测试、部署一站式解决</li>
+  <li><strong>官方支持</strong>：专业的技术支持</li>
+  <li><strong>持续更新</strong>：功能不断改进和增强</li>
+</ul>
+<h3 id="-适合的使用场景">
+  
+  
+    <a href="#-适合的使用场景" class="anchor-heading" aria-labelledby="-适合的使用场景"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 🎯 适合的使用场景
+  
+  
+</h3>
+    
+<h4 id="-非常适合">
+  
+  
+    <a href="#-非常适合" class="anchor-heading" aria-labelledby="-非常适合"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> ✅ 非常适合
+  
+  
+</h4>
+    
+
+<ul>
+  <li>创建个人网站和博客</li>
+  <li>开发简单的 Web 应用</li>
+  <li>制作原型和演示项目</li>
+  <li>学习现代开发流程</li>
+  <li>快速验证创意想法</li>
+</ul>
+<h4 id="️-需要注意">
+  
+  
+    <a href="#️-需要注意" class="anchor-heading" aria-labelledby="️-需要注意"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> ⚠️ 需要注意
+  
+  
+</h4>
+    
+
+<ul>
+  <li>复杂的企业级系统（建议分阶段实现）</li>
+  <li>需要特殊硬件支持的应用</li>
+  <li>对性能有极高要求的系统</li>
+</ul><hr />
+<h2 id="-知识检查">
+  
+  
+    <a href="#-知识检查" class="anchor-heading" aria-labelledby="-知识检查"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 🧠 知识检查
+  
+  
+</h2>
+    
+
+<p>完成这一部分后，请确认你已经理解：</p>
+<h3 id="基础概念-">
+  
+  
+    <a href="#基础概念-" class="anchor-heading" aria-labelledby="基础概念-"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 基础概念 ✅
+  
+  
+</h3>
+    
+
+<ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />编程就是给计算机写”菜谱”</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />AI 辅助编程让初学者也能创建专业应用</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />工作空间是你的数字办公室</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />项目是完整的应用程序</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />线程是处理具体任务的独立环境</li>
+</ul>
+<h3 id="核心优势-">
+  
+  
+    <a href="#核心优势-" class="anchor-heading" aria-labelledby="核心优势-"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 核心优势 ✅
+  
+  
+</h3>
+    
+
+<ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Clacky AI 适合零基础学习者</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />AI 代理团队各有专门职责</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />可以生成专业级质量的代码</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />支持实时协作和反馈</li>
+</ul>
+<h3 id="实际应用-">
+  
+  
+    <a href="#实际应用-" class="anchor-heading" aria-labelledby="实际应用-"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 实际应用 ✅
+  
+  
+</h3>
+    
+
+<ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />知道什么项目适合用 Clacky AI 开发</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />理解根线程和功能线程的区别</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />了解 AI 辅助开发的基本流程</li>
+</ul><hr />
+<h2 id="-恭喜">
+  
+  
+    <a href="#-恭喜" class="anchor-heading" aria-labelledby="-恭喜"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 🎉 恭喜！
+  
+  
+</h2>
+    
+
+<p>你已经完成了第一部分的学习！现在你对 Clacky AI 有了基本的了解。</p>
+
+<p><strong>接下来</strong>，我们将学习如何实际使用 Clacky AI，包括注册、登录和基本操作。</p>
+
+<p><strong>准备好了吗？让我们继续第二部分的学习！</strong> 🚀</p><hr />
+<h2 id="-小贴士">
+  
+  
+    <a href="#-小贴士" class="anchor-heading" aria-labelledby="-小贴士"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 💡 小贴士
+  
+  
+</h2>
+    
+
+<ul>
+  <li>如果有任何概念不清楚，可以重新阅读相关部分</li>
+  <li>建议做一些笔记，记录重要概念</li>
+  <li>可以联系官方邮箱咨询问题</li>
+  <li>保持好奇心，编程学习是一个渐进的过程</li>
+</ul>
+
+          
+
+          
+            
+          
+        </main>
+        
+
+  <hr>
+  <footer>
+    
+      <p><a href="#top" id="back-to-top">回到顶部</a></p>
+    
+
+    <p class="text-small text-grey-dk-100 mb-0">Copyright &copy; 2025 Coding Girls Club. 本教程采用 MIT 许可证。</p>
+
+    
+  </footer>
+
+
+      </div>
+    </div>
+    
+      
+
+<div class="search-overlay"></div>
+
+    
+  </div>
+
+  
+</body>
+</html>
+
