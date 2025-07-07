@@ -29,15 +29,10 @@ jobs:
           cache: "npm"
 
       - name: Install dependencies
-        run: |
-          npm install
-          npm install -g gitbook-cli
+        run: npm install
 
-      - name: Install GitBook plugins
-        run: gitbook install
-
-      - name: Build GitBook
-        run: gitbook build
+      - name: Build HonKit
+        run: npm run build
 
       - name: Setup Pages
         uses: actions/configure-pages@v4

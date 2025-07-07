@@ -4,12 +4,11 @@
   "description": "Clacky AI 编程入门教程",
   "main": "index.js",
   "scripts": {
-    "serve": "gitbook serve",
-    "build": "gitbook build",
-    "install": "gitbook install",
-    "pdf": "gitbook pdf . ./output.pdf",
-    "epub": "gitbook epub . ./output.epub",
-    "mobi": "gitbook mobi . ./output.mobi"
+    "serve": "honkit serve",
+    "build": "honkit build",
+    "install": "echo 'HonKit plugins installation'",
+    "pdf": "honkit pdf . ./output.pdf",
+    "epub": "honkit epub . ./output.epub"
   },
   "repository": {
     "type": "git",
@@ -25,7 +24,7 @@
   "author": "Clacky AI Workshop",
   "license": "MIT",
   "devDependencies": {
-    "gitbook-cli": "^2.3.2"
+    "honkit": "^6.0.3"
   },
   "directories": {
     "doc": "docs"
