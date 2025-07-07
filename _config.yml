@@ -1,8 +1,8 @@
 # Site settings
 title: "Clacky AI 编程入门教程"
 description: "专为零基础学习者设计的 AI 辅助编程教程"
-baseurl: ""
-url: "https://codinggirlsclub.github.io/ai-clacky-workshop-tutorial"
+baseurl: "/ai-clacky-workshop-tutorial"
+url: "https://codinggirlsclub.github.io"
 
 # Theme
 remote_theme: pmarsceill/just-the-docs
@@ -38,10 +38,6 @@ exclude:
   - Gemfile.lock
   - vendor/
   - README.md
-  - _includes/
-  - _layouts/
-  - assets/css/
-  - assets/js/
 
 # Site author
 author:
