@@ -19,36 +19,24 @@
 * [大理站作品](student-works/dali-works.md)
 * [作品提交指南](student-works/submit-guide.md)
 
-## 官方文档
+## Docs - 文档
 
-* [文档总览](docs/README.md)
-* [介绍](docs/introduction.md)
-* [最佳实践](docs/best-practices.md)
-* [成功案例](docs/clackyai-success-cases.md)
-
-### 入门指南
-
-* [快速开始](docs/getting-started/README.md)
-  * [从零开始构建](docs/getting-started/build-from-scratch.md)
-  * [连接现有仓库](docs/getting-started/connect-existing-repo.md)
-
-### Clacky Workspace
-
-* [Workspace 概述](docs/clacky-workspace/README.md)
-  * [环境配置](docs/clacky-workspace/environment.md)
-  * [开发线程](docs/clacky-workspace/dev-thread.md)
-  * [远程开发](docs/clacky-workspace/remote-dev.md)
-  * [配置说明](docs/clacky-workspace/configure.md)
-
-### Clacky AI
-
-* [AI 功能概述](docs/clacky-ai/README.md)
-  * [聊天代理](docs/clacky-ai/chat-agent.md)
-  * [Git 代理](docs/clacky-ai/git-agent.md)
-  * [任务规划代理](docs/clacky-ai/task-plan-agent.md)
-
-### 集成
-
-* [集成概述](docs/integrations/README.md)
-  * [GitHub 集成](docs/integrations/github.md)
-  * [GitLab 集成](docs/integrations/gitlab.md)
+* [官方文档](docs/README.md)
+  * [介绍](docs/introduction.md)
+  * [最佳实践](docs/best-practices.md)
+  * [成功案例](docs/clackyai-success-cases.md)
+  * [快速开始](docs/getting-started/README.md)
+    * [从零开始构建](docs/getting-started/build-from-scratch.md)
+    * [连接现有仓库](docs/getting-started/connect-existing-repo.md)
+  * [Workspace 概述](docs/clacky-workspace/README.md)
+    * [环境配置](docs/clacky-workspace/environment.md)
+    * [开发线程](docs/clacky-workspace/dev-thread.md)
+    * [远程开发](docs/clacky-workspace/remote-dev.md)
+    * [配置说明](docs/clacky-workspace/configure.md)
+  * [AI 功能概述](docs/clacky-ai/README.md)
+    * [聊天代理](docs/clacky-ai/chat-agent.md)
+    * [Git 代理](docs/clacky-ai/git-agent.md)
+    * [任务规划代理](docs/clacky-ai/task-plan-agent.md)
+  * [集成概述](docs/integrations/README.md)
+    * [GitHub 集成](docs/integrations/github.md)
+    * [GitLab 集成](docs/integrations/gitlab.md)

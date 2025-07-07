@@ -53,6 +53,9 @@
       "css": [
         "prism-themes/themes/prism-ghcolors.css"
       ]
+    },
+    "expandable-chapters": {
+      "deep": true
     }
   },
   "variables": {
