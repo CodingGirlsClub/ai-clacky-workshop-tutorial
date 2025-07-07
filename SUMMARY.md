@@ -4,9 +4,8 @@
 
 ## Tutorial - 教程
 
-* [教程总览](tutorial/index.md)
-* [Clacky AI 编程入门教程](tutorial/Clacky-AI-编程入门教程.md)
 * [教程使用指南](tutorial/教程使用指南.md)
+* [Clacky AI 编程入门教程](tutorial/Clacky-AI-编程入门教程.md)
 * [第一部分 - Clacky AI 基础概念](tutorial/第一部分-Clacky-AI-基础概念.md)
 * [第二部分 - 快速入门指南](tutorial/第二部分-快速入门指南.md)
 * [第三部分 - 第一个项目实践](tutorial/第三部分-第一个项目实践.md)
@@ -16,9 +15,9 @@
 
 ## 学员作品
 
-* [作品展示](student-works/index.md)
-* [Dali 的作品](student-works/dali/index.md)
-* [提交作品指南](student-works/submit-prompt/index.md)
+* [作品展示](student-works/README.md)
+* [大理站作品](student-works/dali-works.md)
+* [作品提交指南](student-works/submit-guide.md)
 
 ## 官方文档
 
@@ -52,4 +51,4 @@
 
 * [集成概述](docs/integrations/README.md)
   * [GitHub 集成](docs/integrations/github.md)
-  * [GitLab 集成](docs/integrations/gitlab.md) 
+  * [GitLab 集成](docs/integrations/gitlab.md)

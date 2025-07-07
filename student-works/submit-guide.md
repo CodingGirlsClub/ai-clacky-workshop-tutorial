@@ -121,7 +121,7 @@ permalink: /student-works/submit-prompt/
 
 - 📧 发邮件到：support@clacky.ai
 - 💬 在 GitHub 仓库中提交 Issue
-- 📖 查看 [贡献指南](../../CONTRIBUTING) 获取更多帮助
+- 📖 查看 [贡献指南](../CONTRIBUTING.md) 获取更多帮助
 
 ---
 

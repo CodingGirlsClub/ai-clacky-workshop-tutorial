@@ -54,7 +54,7 @@ permalink: /student-works/dali/
 
 最简单的方式是使用我们为大理学员准备的专门 Prompt：
 
-1. **访问提交指南** - 查看 [学员作品提交 Prompt](../submit-prompt)
+1. **访问提交指南** - 查看 [学员作品提交 Prompt](submit-guide.md)
 2. **复制 Prompt 模板** - 将 Prompt 复制到 Clacky AI 聊天框
 3. **填写你的信息** - 替换 Prompt 中的项目信息为你的实际情况
 4. **让 AI 完成提交** - Clacky AI 会自动创建文档、提交 PR
@@ -84,7 +84,7 @@ projects/你的项目名称/
 
 **步骤 3：提交 Pull Request**
 
-按照 [贡献指南](../../CONTRIBUTING) 的要求提交 PR。
+按照 [贡献指南](../CONTRIBUTING.md) 的要求提交 PR。
 
 ## 🏆 优秀作品评选标准
 
