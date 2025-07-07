@@ -1,2 +1,9 @@
 # IDE files
 .idea/
+
+# Jekyll build artifacts and dependencies
+_site/
+.sass-cache/
+vendor/
+.bundle/
+Gemfile.lock
