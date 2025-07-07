@@ -1,0 +1,517 @@
+/* Clacky AI 主题定制样式 */
+
+/* 主色调 */
+:root {
+  --clacky-primary: #2563eb;
+  --clacky-secondary: #1e40af;
+  --clacky-accent: #3b82f6;
+  --clacky-success: #10b981;
+  --clacky-warning: #f59e0b;
+  --clacky-error: #ef4444;
+  --clacky-text: #1f2937;
+  --clacky-text-light: #6b7280;
+  --clacky-bg: #ffffff;
+  --clacky-bg-light: #f9fafb;
+}
+
+/* 顶部导航栏 */
+.book-header {
+  background: linear-gradient(135deg, var(--clacky-primary), var(--clacky-secondary));
+  border-bottom: 2px solid var(--clacky-accent);
+}
+
+.book-header h1 {
+  color: white;
+  font-weight: 600;
+}
+
+/* 侧边栏 */
+.book-summary {
+  background: var(--clacky-bg-light);
+  border-right: 1px solid #e5e7eb;
+}
+
+.book-summary ul.summary li a {
+  color: var(--clacky-text);
+  transition: all 0.3s ease;
+  border-radius: 6px;
+  margin: 2px 8px;
+  padding: 8px 12px;
+}
+
+.book-summary ul.summary li a:hover {
+  background: var(--clacky-accent);
+  color: white;
+  transform: translateX(4px);
+}
+
+.book-summary ul.summary li.active > a {
+  background: var(--clacky-primary);
+  color: white;
+  font-weight: 500;
+}
+
+/* 主内容区域 */
+.book-body {
+  background: var(--clacky-bg);
+}
+
+.page-wrapper {
+  background: white;
+}
+
+/* 标题样式 */
+.markdown-section h1,
+.markdown-section h2,
+.markdown-section h3,
+.markdown-section h4,
+.markdown-section h5,
+.markdown-section h6 {
+  color: var(--clacky-text);
+  font-weight: 600;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.markdown-section h1 {
+  color: var(--clacky-primary);
+  border-bottom: 3px solid var(--clacky-accent);
+  padding-bottom: 0.5rem;
+}
+
+.markdown-section h2 {
+  color: var(--clacky-secondary);
+  border-bottom: 2px solid #e5e7eb;
+  padding-bottom: 0.3rem;
+}
+
+/* 代码块样式 */
+.markdown-section pre {
+  background: #1f2937;
+  border: 1px solid #374151;
+  border-radius: 8px;
+  padding: 1rem;
+  margin: 1rem 0;
+  overflow-x: auto;
+}
+
+.markdown-section code {
+  background: #f3f4f6;
+  color: var(--clacky-error);
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 0.9em;
+}
+
+.markdown-section pre code {
+  background: transparent;
+  color: #e5e7eb;
+  padding: 0;
+}
+
+/* 引用块样式 */
+.markdown-section blockquote {
+  border-left: 4px solid var(--clacky-accent);
+  background: var(--clacky-bg-light);
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 0 8px 8px 0;
+}
+
+/* 表格样式 */
+.markdown-section table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1rem 0;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.markdown-section table th {
+  background: var(--clacky-primary);
+  color: white;
+  padding: 12px;
+  text-align: left;
+  font-weight: 600;
+}
+
+.markdown-section table td {
+  padding: 12px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.markdown-section table tr:nth-child(even) {
+  background: var(--clacky-bg-light);
+}
+
+/* 链接样式 */
+.markdown-section a {
+  color: var(--clacky-primary);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.markdown-section a:hover {
+  color: var(--clacky-secondary);
+  border-bottom-color: var(--clacky-accent);
+}
+
+/* 按钮样式 */
+.btn {
+  background: var(--clacky-primary);
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background: var(--clacky-secondary);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+}
+
+/* 警告框样式 */
+.alert {
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 8px;
+  border-left: 4px solid;
+}
+
+.alert-info {
+  background: #eff6ff;
+  border-color: var(--clacky-primary);
+  color: var(--clacky-secondary);
+}
+
+.alert-success {
+  background: #ecfdf5;
+  border-color: var(--clacky-success);
+  color: #065f46;
+}
+
+.alert-warning {
+  background: #fffbeb;
+  border-color: var(--clacky-warning);
+  color: #92400e;
+}
+
+.alert-error {
+  background: #fef2f2;
+  border-color: var(--clacky-error);
+  color: #991b1b;
+}
+
+/* 页面底部导航 */
+.navigation {
+  border-top: 1px solid #e5e7eb;
+  padding-top: 2rem;
+  margin-top: 3rem;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .book-summary {
+    transform: translateX(-100%);
+  }
+  
+  .book-summary.open {
+    transform: translateX(0);
+  }
+  
+  .markdown-section {
+    padding: 1rem;
+  }
+  
+  .markdown-section table {
+    font-size: 0.9em;
+  }
+}
+
+/* 搜索框样式 */
+#book-search-input {
+  border: 2px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 8px 12px;
+  transition: all 0.3s ease;
+}
+
+#book-search-input:focus {
+  border-color: var(--clacky-accent);
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+  outline: none;
+}
+
+/* 加载动画 */
+.loading {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 3px solid #f3f3f3;
+  border-top: 3px solid var(--clacky-primary);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* 自定义滚动条 */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--clacky-accent);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--clacky-primary);
+}
+
+/* 页面加载器 */
+.page-loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  transition: opacity 0.3s ease;
+}
+
+/* 阅读进度条 */
+.reading-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 3px;
+  background: linear-gradient(90deg, var(--clacky-primary), var(--clacky-accent));
+  z-index: 1000;
+  transition: width 0.3s ease;
+}
+
+/* 返回顶部按钮 */
+.back-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  background: var(--clacky-primary);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  font-size: 20px;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  z-index: 1000;
+}
+
+.back-to-top.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.back-to-top:hover {
+  background: var(--clacky-secondary);
+  transform: translateY(-3px);
+}
+
+/* 目录样式 */
+.table-of-contents {
+  background: var(--clacky-bg-light);
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin: 2rem 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.table-of-contents h4 {
+  margin: 0 0 1rem 0;
+  color: var(--clacky-primary);
+  font-size: 1.1em;
+}
+
+.table-of-contents ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.table-of-contents li {
+  margin: 0.5rem 0;
+}
+
+.table-of-contents a {
+  color: var(--clacky-text);
+  text-decoration: none;
+  padding: 0.25rem 0;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+.table-of-contents a:hover {
+  color: var(--clacky-primary);
+  padding-left: 0.5rem;
+}
+
+.table-of-contents .toc-h2 {
+  padding-left: 1rem;
+}
+
+.table-of-contents .toc-h3 {
+  padding-left: 2rem;
+  font-size: 0.9em;
+}
+
+/* 复制代码按钮 */
+.copy-code-btn {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  background: rgba(255, 255, 255, 0.8);
+  border: none;
+  border-radius: 4px;
+  padding: 0.25rem 0.5rem;
+  cursor: pointer;
+  font-size: 0.8em;
+  transition: all 0.3s ease;
+}
+
+.copy-code-btn:hover {
+  background: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* 代码块增强 */
+pre {
+  position: relative;
+}
+
+.code-language {
+  position: absolute;
+  top: 0.5rem;
+  left: 1rem;
+  background: var(--clacky-primary);
+  color: white;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.7em;
+  font-weight: 600;
+}
+
+/* 页面统计 */
+.page-stats {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  padding: 0.75rem 1rem;
+  margin: 1rem 0;
+  font-size: 0.9em;
+  color: var(--clacky-text-light);
+}
+
+.page-stats span {
+  margin-right: 1rem;
+}
+
+/* 主题切换按钮 */
+.theme-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  background: var(--clacky-primary);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 1000;
+}
+
+.theme-toggle:hover {
+  background: var(--clacky-secondary);
+  transform: scale(1.1);
+}
+
+/* 暗色主题 */
+.dark-theme {
+  --clacky-bg: #1a1a1a;
+  --clacky-bg-light: #2d2d2d;
+  --clacky-text: #e5e5e5;
+  --clacky-text-light: #a0a0a0;
+}
+
+.dark-theme .book-summary {
+  background: var(--clacky-bg-light);
+  color: var(--clacky-text);
+}
+
+.dark-theme .markdown-section {
+  background: var(--clacky-bg);
+  color: var(--clacky-text);
+}
+
+.dark-theme .table-of-contents {
+  background: var(--clacky-bg-light);
+  border-color: #404040;
+}
+
+/* 图片懒加载 */
+img.lazy {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+img.lazy.loaded {
+  opacity: 1;
+}
+
+/* 打印样式 */
+@media print {
+  .back-to-top,
+  .theme-toggle,
+  .reading-progress,
+  .copy-code-btn {
+    display: none !important;
+  }
+
+  .markdown-section {
+    font-size: 12pt;
+    line-height: 1.4;
+  }
+
+  .markdown-section h1,
+  .markdown-section h2,
+  .markdown-section h3 {
+    page-break-after: avoid;
+  }
+
+  pre {
+    page-break-inside: avoid;
+  }
+}

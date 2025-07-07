@@ -2,5 +2,61 @@
   "title": "Clacky AI 编程入门教程",
   "description": "一个全面的 Clacky AI 编程入门教程，包含基础概念、快速入门、项目实践和进阶功能。",
   "author": "Clacky AI Workshop",
-  "language": "zh-hans"
+  "language": "zh-hans",
+  "root": ".",
+  "structure": {
+    "readme": "README.md",
+    "summary": "SUMMARY.md"
+  },
+  "plugins": [
+    "sharing",
+    "fontsettings",
+    "theme-default",
+    "prism",
+    "github",
+    "edit-link",
+    "page-toc-button",
+    "back-to-top-button",
+    "expandable-chapters",
+    "copy-code-button"
+  ],
+  "pluginsConfig": {
+    "theme-default": {
+      "showLevel": true
+    },
+    "sharing": {
+      "facebook": true,
+      "twitter": true,
+      "weibo": true,
+      "instapaper": false,
+      "vk": false,
+      "all": [
+        "facebook",
+        "twitter",
+        "weibo",
+        "instapaper"
+      ]
+    },
+    "fontsettings": {
+      "theme": "white",
+      "family": "sans",
+      "size": 2
+    },
+    "github": {
+      "url": "https://github.com/CodingGirlsClub/ai-clacky-workshop-tutorial"
+    },
+    "edit-link": {
+      "base": "https://github.com/CodingGirlsClub/ai-clacky-workshop-tutorial/edit/main",
+      "label": "编辑此页"
+    },
+    "prism": {
+      "css": [
+        "prism-themes/themes/prism-ghcolors.css"
+      ]
+    }
+  },
+  "variables": {
+    "version": "1.0.0",
+    "updated": "2025-07-07"
+  }
 }

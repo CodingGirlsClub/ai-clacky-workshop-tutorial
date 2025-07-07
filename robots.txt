@@ -1,0 +1,22 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://codinggirlsclub.github.io/ai-clacky-workshop-tutorial/sitemap.xml
+
+# Disallow build artifacts and development files
+Disallow: /node_modules/
+Disallow: /_book/
+Disallow: /.git/
+Disallow: /.github/
+Disallow: /package-lock.json
+Disallow: /package.json
+
+# Allow important directories
+Allow: /tutorial/
+Allow: /docs/
+Allow: /student-works/
+Allow: /assets/
+
+# Crawl-delay (optional, in seconds)
+Crawl-delay: 1

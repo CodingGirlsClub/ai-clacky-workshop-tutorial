@@ -6,9 +6,17 @@
   "scripts": {
     "serve": "honkit serve",
     "build": "honkit build",
+    "dev": "honkit serve --port 4000",
+    "clean": "rm -rf _book",
+    "prebuild": "npm run clean",
+    "postbuild": "echo 'Build completed successfully!'",
     "install": "echo 'HonKit plugins installation'",
     "pdf": "honkit pdf . ./output.pdf",
-    "epub": "honkit epub . ./output.epub"
+    "epub": "honkit epub . ./output.epub",
+    "lint": "markdownlint **/*.md --ignore node_modules --ignore _book",
+    "lint:fix": "markdownlint **/*.md --ignore node_modules --ignore _book --fix",
+    "deploy": "npm run build && gh-pages -d _book",
+    "test": "npm run lint && npm run build"
   },
   "repository": {
     "type": "git",
@@ -24,7 +32,16 @@
   "author": "Clacky AI Workshop",
   "license": "MIT",
   "devDependencies": {
-    "honkit": "^6.0.3"
+    "gitbook-plugin-back-to-top-button": "^0.1.4",
+    "gitbook-plugin-copy-code-button": "^0.0.2",
+    "gitbook-plugin-edit-link": "^2.0.2",
+    "gitbook-plugin-expandable-chapters": "^0.2.0",
+    "gitbook-plugin-github": "^3.0.0",
+    "gitbook-plugin-page-toc-button": "^0.1.1",
+    "gitbook-plugin-sharing": "^1.0.2",
+    "honkit": "^6.0.3",
+    "honkit-plugin-prism": "^2.5.3",
+    "prism-themes": "^1.9.0"
   },
   "directories": {
     "doc": "docs"
