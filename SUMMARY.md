@@ -40,3 +40,7 @@
   * [集成概述](docs/integrations/README.md)
     * [GitHub 集成](docs/integrations/github.md)
     * [GitLab 集成](docs/integrations/gitlab.md)
+
+## Kids Workshop - 小小魔法师工坊
+
+* [Clacky AI 小小魔法师工坊](tutorial-for-kids/README.md)
