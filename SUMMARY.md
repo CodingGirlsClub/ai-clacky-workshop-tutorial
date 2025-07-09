@@ -1,6 +1,6 @@
 # Summary
 
-* [首页](README.md)
+* [Clacky AI 编程工作坊教程](README.md)
 
 ## Tutorial - 教程
 
